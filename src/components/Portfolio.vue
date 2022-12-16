@@ -10,8 +10,8 @@
         <div class="bl-line"></div>
       </div>
     </div>
-    <div class="row gap-5  justify-content-center mt-5">
-      <div v-for="img in images" style="width: 330px; height: 240px"
+    <div class="row gap-3 justify-content-center mt-5">
+      <div v-for="img in images" style="width: 400px; height: 300px"
            class="col-4 rounded-1">
         <img :src=img class="w-100">
       </div>
