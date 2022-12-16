@@ -1,30 +1,29 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Navbar/>
+  <Homepage/>
+  <Portfolio/>
+  <About/>
+  <Contact/>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
+
+<script>
+import Homepage from "@/views/Homepage";
+import Navbar from "@/components/Navbar";
+import Portfolio from "@/components/Portfolio";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+export default {
+  components: {
+    Navbar,
+    Homepage,
+    Portfolio,
+    About,
+    Contact
+  },
+
+  name: 'app',
+}
+</script>
