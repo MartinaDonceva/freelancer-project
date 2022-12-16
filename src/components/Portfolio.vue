@@ -11,9 +11,9 @@
       </div>
     </div>
     <div class="row gap-5  justify-content-center mt-5">
-      <div v-for="port in portfolios" :style="{background: port.background}" style="width: 330px; height: 240px"
+      <div v-for="img in images" style="width: 330px; height: 240px"
            class="col-4 rounded-1">
-        <img :src=port.image class="w-100">
+        <img :src=img class="w-100">
       </div>
     </div>
   </div>
@@ -31,35 +31,14 @@ export default {
   name: 'Portfolio',
   data() {
     return {
-      portfolios: [
-        {
-          image: "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png",
-          background: "#dc3545"
-        },
-        {
-          image: "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png",
-          background: "#0dcaf0"
-        }
-        ,
-        {
-          image: "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png",
-          background: "#212529;"
-        }
-        ,
-        {
-          image: "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png",
-          background: "#0dcaf0"
-        }
-        ,
-        {
-          image: "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png",
-          background: "#0d6efd"
-        }
-        ,
-        {
-          image: "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png",
-          background: "#adb5bd"
-        }
+
+      images: [
+        "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png",
+        "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png",
+        "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png",
+        "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png",
+        "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png",
+        "https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png"
       ]
     }
   }
